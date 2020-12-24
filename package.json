@@ -1,5 +1,5 @@
 {
-  "name": "bundle-fileList-webpack-plugin",
+  "name": "bundle-filelist-webpack-plugin",
   "version": "1.0.0",
   "description": "a webpack plugin that outputs webpack bundle assets to a markdown file",
   "main": "lib/index.js",

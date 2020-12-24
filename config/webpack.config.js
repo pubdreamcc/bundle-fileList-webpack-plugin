@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const LogSuccessPlugin = require('./plugins/log-success-plugin');
-const BundlefileListWebpackPlugin = require('../lib/index');
+const BundleFilelistWebpackPlugin = require('../lib/index');
 module.exports = {
   // 为了便于测试这里将webpack 打包环境置于 开发环境
   mode: 'development',
@@ -32,7 +32,7 @@ module.exports = {
     new LogSuccessPlugin({
       msg: '打包成功！'
     }),
-    new BundlefileListWebpackPlugin({
+    new BundleFilelistWebpackPlugin({
       filename: 'myAssetsList.md'
     })
   ]
